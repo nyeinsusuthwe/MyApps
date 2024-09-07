@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="explicit_intent">Explicit Intent</string>
+    <string name="implicit_intent">Implicit Intent</string>
+    <string name="implicit_intent_for_result">Implicit Intent for Result</string>
+</resources>

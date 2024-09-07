@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:background="#FFF"
+    tools:context=".calculator.MainActivityCalculator">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JM Calculator"
+        android:textAlignment="textEnd"
+        android:textSize="30dp"
+        android:textColor="#191919"
+        android:textStyle="bold"
+        android:paddingTop="20sp"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_operation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operation"
+        android:textColor="#191919"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="24sp"
+        android:layout_marginTop="140dp"
+        android:paddingEnd="8dp"
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/et_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_operation"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="end"
+        android:textSize="32sp"
+        android:text="0"
+        android:textColor="#191919"
+        android:background="@drawable/bg_calculator"
+
+        />
+
+    <TextView
+        android:textStyle="bold"
+        android:id="@+id/tv_operator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operator"
+        android:paddingTop="8dp"
+        android:paddingEnd="8dp"
+        android:textColor="#191919"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/et_calculator"
+        android:textSize="22sp"
+        />
+
+
+        <GridLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@id/tv_operator"
+            android:columnCount="4"
+            android:rowCount="4"
+            android:useDefaultMargins="true" >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:onClick="onNumberClicked"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:fontFamily="@font/el_messiri"
+                android:text="1"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:background="@drawable/bg_btnumbers"
+                app:cornerRadius="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="2"
+                android:fontFamily="@font/el_messiri"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="3"
+                android:fontFamily="@font/el_messiri"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="+"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btoperator"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onOperatorClicked"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="4"
+                android:textSize="32sp"
+                android:fontFamily="@font/el_messiri"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="5"
+                android:textSize="32sp"
+                android:fontFamily="@font/el_messiri"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="6"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:fontFamily="@font/el_messiri"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:background="@drawable/bg_btoperator"
+                android:onClick="onOperatorClicked"
+                android:text="-"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:cornerRadius="8dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="7"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:fontFamily="@font/el_messiri"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="8"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="9"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="*"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btoperator"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onOperatorClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="C"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="@color/white"
+                android:background="@drawable/bg_btclear"
+                app:cornerRadius="8dp"
+                android:onClick="onClearClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="0"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btnumbers"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:fontFamily="@font/el_messiri"
+                android:onClick="onNumberClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btoperator"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onOperatorClicked"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:text="/"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:background="@drawable/bg_btoperator"
+                android:textStyle="bold"
+                app:cornerRadius="8dp"
+                android:onClick="onOperatorClicked"/>
+
+        </GridLayout>
+
+
+</RelativeLayout>

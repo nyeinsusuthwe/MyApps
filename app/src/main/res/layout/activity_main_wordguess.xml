@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_word_guess"
+        android:gravity="center"
+        android:text="Word Guess"
+        android:textColor="#15A3A3"
+        android:textSize="22sp"
+        android:textStyle="italic|bold"/>
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/et_your_guess"
+        android:layout_width = "200dp"
+        android:layout_height="wrap_content"
+        android:hint="Enter your guess"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/bt_guess"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Guess"
+        />
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#BC00006C"></solid>
+            <corners android:radius="25dp" />
+            <stroke android:width="5dp" android:color="#595353"/>
+        </shape>
+    </item>
+
+<!--    <item android:state_hovered="true">-->
+<!--        <shape android:shape="rectangle" F15A3C B7000000>-->
+<!--            <solid android:color="#ed1234"62ADEC D7319BEC/>-->
+<!--        </shape>-->
+<!--    </item>-->
+
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <solid android:color="#00006C"></solid>
+            <corners android:radius="25dp" />
+<!--            <stroke android:width="3dp" android:color="#B7000000"/>-->
+        </shape>
+    </item>
+
+</selector>
+
+
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<shape xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    android:shape="rectangle">-->
+
+<!--    <solid android:color="#62ADEC"></solid>-->
+
+<!--&lt;!&ndash;    <corners&ndash;&gt;-->
+<!--&lt;!&ndash;        android:bottomRightRadius="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:topRightRadius="16dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        />&ndash;&gt;-->
+
+<!--    <corners android:radius="25dp"/>-->
+
+<!--    <stroke android:width="3dp" android:color="#D7319BEC"/>-->
+<!--</shape>-->
